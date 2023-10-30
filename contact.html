@@ -8,8 +8,8 @@
   </head>
   <body>
     <header>
-      <div class="banner"></div>
-      <h1>Un gros titre</h1>
+      <img src="Banner2.jpg" />
+      <h1>Bienvenue sur mon site !</h1>
       <nav>
         <ul class="no-bullets">
           <li><a href="index.html">Accueil</a></li>
@@ -20,10 +20,57 @@
       </nav>
     </header>
     <fieldset>
-        <legend>Contact</legend>
-        <div>
-            <form action="traitementForm.php" method="GET"></form>
-        </div>
+      <legend>Contact</legend>
+      <form action="traitementForm.php" method="GET"></form>
+      <div>
+        <label class="obligatoire" for="nom">Nom:</label>
+        <input
+          type="text"
+          id="nom"
+          placeholder="Nom"
+          minlength="2"
+          maxlength="20"
+          required
+        />
+      </div>
+      <div>
+        <label class="obligatoire" for="email">Email:</label>
+        <input type="text" id="email" placeholder="email" required />
+      </div>
+      <div>
+        <label for="commentaire">Laissez un commentaire</label><br />
+        <textarea
+          name="commentaire"
+          id="commentaire"
+          cols="70"
+          rows="10"
+          placeholder="Je dépose mon avis :²"
+        ></textarea>
+      </div>
+      <div>
+        <form action="monProgramme.php" method="post"></form>
+        <input
+          type="checkbox"
+          id="checkbox"
+          name="checkbox"
+          type="submit"
+          value="envoyer"
+          checked
+        />
+        <label for="checkbox">Envoyer une copie par Email</label>
+      </div>
+      <div>
+        <input type="submit" value="Envoyer" />
+        <input type="reset" value="reset" />
+      </div>
     </fieldset>
+    <footer>
+      <ul class="no-bullets">
+        <li><a href="">Menu 1</a></li>
+        <li><a href="">Menu 2</a></li>
+        <li><a href="">Menu 3</a></li>
+        <li><a href="">Menu 4</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
