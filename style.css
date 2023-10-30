@@ -1,0 +1,16 @@
+.banner {
+    width: 800px;
+    height: 200px;
+    background-color: red;
+    text-align: center;
+    line-height: 200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+.no-bullets {
+    list-style-type: none;
+}
